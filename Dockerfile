@@ -10,6 +10,4 @@ RUN npm ci --ignore-scripts && npm rebuild --platform=linux --libc=musl sharp &&
 
 RUN echo "" > .env
 
-USER node
-
 CMD node /app/dist/index.js "$ENV_FILE"
